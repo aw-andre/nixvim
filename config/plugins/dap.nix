@@ -5,43 +5,6 @@
     extensions = {
       dap-ui.enable = true;
       dap-virtual-text.enable = true;
-      dap-python.enable = true;
-    };
-    adapters = {
-      executables = {
-        lldb.command = "${pkgs.lldb_19}/bin/lldb-dap";
-      };
-      # servers = {
-      #   delve = {
-      #     host = "127.0.0.1";
-      #     port = "\${port}";
-      #
-      #     executable = {
-      #       command = lib.getExe pkgs.delve;
-      #       args = [
-      #         "dap"
-      #         "-l"
-      #         "127.0.0.1:\${port}"
-      #         "--log"
-      #         "--log-output=dap"
-      #       ];
-      #     };
-      #   };
-      # };
-    };
-
-    configurations = {
-      c = [
-        {
-          name = "lldb";
-          type = "lldb";
-          request = "launch";
-          program.__raw = ''
-            function()
-                return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. '/', "file")
-            end'';
-        }
-      ];
     };
   };
 
