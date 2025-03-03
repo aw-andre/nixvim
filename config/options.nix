@@ -41,13 +41,9 @@
     # Show line and column when searching
     ruler = true;
 
-    # Global substitution by default
-    gdefault = true;
-
     # Start scrolling when the cursor is X lines away from the top/bottom
-    scrolloff = 5;
+    scrolloff = 10;
 
-    showmode = false;
     hlsearch = true;
     incsearch = true;
     wrap = true;
@@ -56,8 +52,5 @@
     virtualedit = "block";
     timeoutlen = 300;
     shada = "'1000,<100000,s100,h";
-    #      fillchars = {
-    #        eob = " ";
-    #      };
   };
 }
