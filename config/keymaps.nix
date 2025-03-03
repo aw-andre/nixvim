@@ -31,6 +31,27 @@
       options.desc = "Exit terminal mode";
     }
     {
+      mode = [
+        "n"
+        "v"
+      ];
+      key = "<leader>d";
+      action = "\"_d";
+      options.desc = "Delete without yanking";
+    }
+    {
+      mode = "v";
+      key = "<leader>p";
+      action = "\"p";
+      options.desc = "Put without yanking";
+    }
+    {
+      mode = "n";
+      key = "<Esc>";
+      action = "<CMD>nohlsearch<CR>";
+      options.desc = "Turn off search highlighting";
+    }
+    {
       mode = "n";
       key = "J";
       action = "mzJ`z";
@@ -43,16 +64,28 @@
       options.desc = "Join lower line";
     }
     {
-      mode =  [ "n" "v" ];
+      mode = [
+        "n"
+        "v"
+      ];
       key = "k";
       action = "v:count == 0 ? 'gk' : 'k'";
-      options = { expr = true; silent = true; };
+      options = {
+        expr = true;
+        silent = true;
+      };
     }
     {
-      mode =  [ "n" "v" ];
+      mode = [
+        "n"
+        "v"
+      ];
       key = "j";
       action = "v:count == 0 ? 'gj' : 'j'";
-      options = { expr = true; silent = true; };
+      options = {
+        expr = true;
+        silent = true;
+      };
     }
   ];
 }
