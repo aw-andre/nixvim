@@ -42,7 +42,7 @@
     {
       mode = "v";
       key = "<leader>p";
-      action = "\"p";
+      action = "\"_dp";
       options.desc = "Put without yanking";
     }
     {
