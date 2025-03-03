@@ -1,7 +1,9 @@
 {
   imports = [
+    ./luasnip.nix
+    ./rainbow-delimiters.nix
+    ./treesitter-context.nix
     ./nvim-surround.nix
-    ./oil.nix
     ./conform-nvim.nix
     ./neoscroll.nix
     ./dap.nix
@@ -9,7 +11,6 @@
     ./lsp.nix
     ./telescope.nix
     ./nvim-ufo.nix
-    ./auto-hlsearch.nix
     ./lualine.nix
     ./blink-cmp.nix
   ];
