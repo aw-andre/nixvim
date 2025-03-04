@@ -13,10 +13,10 @@
     ./nvim-ufo.nix
     ./lualine.nix
     ./blink-cmp.nix
+    ./copilot-chat.nix
   ];
   plugins = {
     copilot-lua.enable = true;
-    copilot-chat.enable = true;
     web-devicons.enable = true;
     which-key.enable = true;
     comment.enable = true;

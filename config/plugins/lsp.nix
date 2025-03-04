@@ -77,9 +77,9 @@
         }
         {
           mode = "n";
-          key = "<leader>c";
+          key = "<leader>a";
           action.__raw = "vim.lsp.buf.code_action";
-          options.desc = "[C]ode Action";
+          options.desc = "Code [A]ction";
         }
         {
           mode = "n";
