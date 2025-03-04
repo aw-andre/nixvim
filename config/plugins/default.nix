@@ -15,6 +15,8 @@
     ./blink-cmp.nix
   ];
   plugins = {
+    copilot-lua.enable = true;
+    copilot-chat.enable = true;
     web-devicons.enable = true;
     which-key.enable = true;
     comment.enable = true;
