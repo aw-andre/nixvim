@@ -7,7 +7,7 @@
       min_window_height = 0;
       multiwindow = true;
       mode = "topline";
-      multiline_threshold = 1;
+      multiline_threshold = 5;
     };
   };
 }
