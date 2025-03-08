@@ -1,8 +1,7 @@
 {
-  # enable = true;
-  # defaultEditor = true;
   viAlias = true;
   vimAlias = true;
+  performance.combinePlugins.enable = true;
   colorschemes.vscode.enable = true;
   globals = {
     mapleader = " ";
