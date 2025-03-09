@@ -1,7 +1,13 @@
 {
   viAlias = true;
   vimAlias = true;
-  performance.combinePlugins.enable = true;
+  performance.combinePlugins = {
+    enable = true;
+    standalonePlugins = [
+      "copilot.lua"
+      "oil.nvim"
+    ];
+  };
   colorschemes.vscode.enable = true;
   globals = {
     mapleader = " ";
