@@ -14,6 +14,7 @@
     ./lualine.nix
     ./blink-cmp.nix
     ./copilot-chat.nix
+    ./oil.nix
   ];
   plugins = {
     copilot-lua.enable = true;
