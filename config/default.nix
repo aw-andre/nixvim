@@ -5,7 +5,6 @@
     enable = true;
     standalonePlugins = [
       "copilot.lua"
-      "oil.nvim"
     ];
   };
   colorschemes.vscode.enable = true;
@@ -19,5 +18,6 @@
     ./options.nix
     ./autocmd.nix
     ./plugins
+    ./ft
   ];
 }

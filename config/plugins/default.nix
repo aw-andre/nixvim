@@ -4,10 +4,8 @@
     ./rainbow-delimiters.nix
     ./treesitter-context.nix
     ./nvim-surround.nix
-    ./conform-nvim.nix
     ./neoscroll.nix
     ./dap.nix
-    ./lint.nix
     ./lsp.nix
     ./telescope.nix
     ./nvim-ufo.nix
