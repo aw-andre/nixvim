@@ -19,7 +19,6 @@
     splitbelow = true;
 
     list = true;
-    # NOTE: .__raw here means that this field is raw lua code
     listchars.__raw = "{ tab = '» ', trail = '·', nbsp = '␣' }";
 
     # Tab defaults (might get overwritten by an LSP server)
@@ -29,14 +28,12 @@
     expandtab = true;
     smarttab = true;
 
-    # System clipboard support, needs xclip/wl-clipboard
-    clipboard.providers.wl-copy.enable = true; # Wayland
-
     # Save undo history
     undofile = true;
 
     # Highlight the current line for cursor
     cursorline = true;
+    cursorcolumn = true;
 
     # Show line and column when searching
     ruler = true;

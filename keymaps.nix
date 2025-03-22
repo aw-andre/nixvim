@@ -54,9 +54,15 @@
     {
       mode = "n";
       key = "J";
-      action = "mzJ`z";
+      action = "m`J``";
       options.desc = "Join lower line";
     }
+    # {
+    #   mode = "v";
+    #   key = "y";
+    #   action = "m`y``";
+    #   options.desc = "Yank in visual mode";
+    # }
     {
       mode = "v";
       key = "J";

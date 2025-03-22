@@ -1,7 +1,7 @@
 {
   plugins.none-ls = {
     enable = true;
-    enableLspFormat = true;
+    # enableLspFormat = true;
     settings.updateInInsert = false;
     sources.completion.luasnip.enable = true;
   };
@@ -17,6 +17,13 @@
         silent = true;
         desc = "Format Buffer";
       };
+    }
+  ];
+  autoCmd = [
+    {
+      event = "BufWritePre";
+      callback.__raw = "function () vim.lsp.buf.format() end";
+      desc = "Format when writing text";
     }
   ];
 }
