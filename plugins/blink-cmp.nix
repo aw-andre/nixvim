@@ -22,6 +22,7 @@
           # "spell"
           "copilot"
           "emoji"
+          "dadbod"
           # "ripgrep"
         ];
         providers = {
@@ -115,6 +116,16 @@
           #     debug = false;
           #   };
           # };
+          vim-dadbod-completion = {
+            name = "DB";
+            module = "vim_dadbod_completion.blink";
+            enabled.__raw = ''
+              function()
+                  return vim.tbl_contains({ 'sql', 'mysql', 'plsql' }, vim.bo.filetype)
+              end
+            '';
+            score_offset = 10;
+          };
         };
       };
     };
