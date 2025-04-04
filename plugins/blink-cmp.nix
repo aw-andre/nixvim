@@ -8,7 +8,6 @@
     blink-copilot.enable = true;
     blink-emoji.enable = true;
     # blink-ripgrep.enable = true;
-    vim-dadbod-completion.enable = true;
     blink-cmp = {
       enable = true;
       setupLspCapabilities = true;
@@ -117,7 +116,7 @@
           #     debug = false;
           #   };
           # };
-          vim-dadbod-completion = {
+          dadbod = {
             name = "Dadbod";
             module = "vim_dadbod_completion.blink";
             enabled.__raw = ''
