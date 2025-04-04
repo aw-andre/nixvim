@@ -1,23 +1,17 @@
-{
-  imports = [
-    ./luasnip.nix
-    ./none-ls.nix
-    ./rainbow-delimiters.nix
-    ./treesitter-context.nix
-    ./nvim-surround.nix
-    ./neoscroll.nix
-    ./dap.nix
-    ./lsp.nix
-    ./telescope.nix
-    ./nvim-ufo.nix
-    ./lualine.nix
-    ./blink-cmp.nix
-    ./copilot-chat.nix
-    ./oil.nix
-    ./treesitter.nix
-    ./yanky.nix
-    ./obsidian.nix
-  ];
+let
+  # Read all files in the current directory
+  files = builtins.readDir ./.;
+
+  # Filter out default.nix and non-.nix files
+  nixFiles = builtins.filter
+    (name: name != "default.nix" && builtins.match ".*\\.nix" name != null)
+    (builtins.attrNames files);
+
+  # Create a list of import statements
+  imports = map (name: ./. + "/${name}") nixFiles;
+in {
+  # Import all configuration modules automatically
+  imports = imports;
   plugins = {
     direnv.enable = true;
     copilot-lua.enable = true;
