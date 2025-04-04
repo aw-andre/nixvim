@@ -7,5 +7,6 @@
     ./py.nix
     ./rs.nix
     ./sh.nix
+    ./sql.nix
   ];
 }
