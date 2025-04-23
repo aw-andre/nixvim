@@ -17,6 +17,7 @@
           auto_show_delay_ms = 0;
         };
         ghost_text.enabled = true;
+        signature.enabled = true;
         sources = {
           default = [
             "lsp"
