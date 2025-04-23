@@ -12,11 +12,13 @@
       enable = true;
       setupLspCapabilities = true;
       settings = {
-        documentation = {
-          auto_show = true;
-          auto_show_delay_ms = 0;
+        completion = {
+          documentation = {
+            auto_show = true;
+            auto_show_delay_ms = 0;
+          };
+          ghost_text.enabled = true;
         };
-        ghost_text.enabled = true;
         signature.enabled = true;
         sources = {
           default = [
