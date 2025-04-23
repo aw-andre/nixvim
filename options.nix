@@ -32,7 +32,7 @@
     undofile = true;
 
     # Highlight the current line for cursor
-    # cursorline = true;
+    cursorline = true;
 
     # Show line and column when searching
     ruler = true;
