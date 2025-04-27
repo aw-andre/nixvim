@@ -1,7 +1,7 @@
 {
   plugins.copilot-chat = {
     enable = true;
-    settings.model = "gpt-3.5-turbo";
+    settings.model = "claude-3.7-sonnet-thought";
   };
   keymaps = [{
     mode = "n";
