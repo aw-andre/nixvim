@@ -6,6 +6,9 @@
       jsonls.enable = true;
       ts_ls.enable = true;
     };
-    none-ls.sources.formatting.prettier.enable = true;
+    none-ls.sources.formatting.prettier = {
+      enable = true;
+      disableTsServerFormatter = true;
+    };
   };
 }
