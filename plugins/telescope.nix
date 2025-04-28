@@ -72,7 +72,8 @@
     {
       mode = "n";
       key = "<leader>f/";
-      action.__raw = "function() require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown { winblend = 10, previewer = false, }) end";
+      action.__raw =
+        "function() require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown { winblend = 10, previewer = false, }) end";
       options.desc = "[F]ind [/] in Current Buffer";
     }
     {
@@ -90,7 +91,8 @@
     {
       mode = "n";
       key = "<leader>go";
-      action.__raw = "function() require('telescope.builtin').live_grep { grep_open_files = true, prompt_title = 'Live Grep in Open Files', } end";
+      action.__raw =
+        "function() require('telescope.builtin').live_grep { grep_open_files = true, prompt_title = 'Live Grep in Open Files', } end";
       options.desc = "[G]rep in [O]pen Files";
     }
   ];

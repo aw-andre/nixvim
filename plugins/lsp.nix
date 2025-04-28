@@ -66,7 +66,8 @@
         {
           mode = "n";
           key = "<leader>fS";
-          action.__raw = "require('telescope.builtin').lsp_dynamic_workspace_symbols";
+          action.__raw =
+            "require('telescope.builtin').lsp_dynamic_workspace_symbols";
           options.desc = "[F]ind Dynamic Workspace [S]ymbols";
         }
         {
@@ -81,16 +82,18 @@
           action.__raw = "vim.lsp.buf.code_action";
           options.desc = "Code [A]ction";
         }
-        # {
-        #   mode = "n";
-        #   key = "K";
-        #   action.__raw = "vim.lsp.buf.hover";
-        #   options.desc = "Hover Documentation";
-        # }
+        {
+          mode = "n";
+          key = "K";
+          action.__raw =
+            "function() vim.lsp.buf.hover({ border = 'rounded' }) end";
+          options.desc = "Hover Documentation";
+        }
         {
           mode = "n";
           key = "<leader>h";
-          action.__raw = "function() vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled()) end";
+          action.__raw =
+            "function() vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled()) end";
           options.desc = "Toggle Inlay [H]ints";
         }
       ];

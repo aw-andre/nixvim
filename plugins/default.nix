@@ -11,7 +11,7 @@ let
   imports = map (name: ./. + "/${name}") nixFiles;
 in {
   # Import all configuration modules automatically
-  imports = imports;
+  inherit imports;
   plugins = {
     direnv.enable = true;
     copilot-lua.enable = true;
