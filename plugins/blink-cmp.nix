@@ -12,6 +12,11 @@
       enable = true;
       setupLspCapabilities = true;
       settings = {
+        enabled.__raw = ''
+          function()
+            return vim.bo.filetype ~= "copilot-chat"
+          end
+        '';
         completion = {
           menu.border = "rounded";
           documentation = {
@@ -20,7 +25,10 @@
             window.border = "rounded";
           };
         };
-        signature.enabled = true;
+        signature = {
+          enabled = true;
+          window.border = "rounded";
+        };
         sources = {
           default = [
             "lsp"
