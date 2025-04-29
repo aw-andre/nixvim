@@ -1,7 +1,10 @@
 {
   plugins = {
     lsp.servers = {
-      html.enable = true;
+      html = {
+        enable = true;
+        filetypes = [ "html" "htmldjango" "htmlangular" "htmlcheetah" ];
+      };
       htmx.enable = true;
       jsonls.enable = true;
       ts_ls.enable = true;
