@@ -1,4 +1,5 @@
 { pkgs, ... }: {
+  plugins.lsp.servers.cobol_ls.enable = true;
   extraPlugins = [
     (pkgs.vimUtils.buildVimPlugin {
       name = "cobol.vim";
