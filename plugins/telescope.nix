@@ -1,7 +1,6 @@
 {
   plugins.telescope = {
     enable = true;
-    settings.defaults.borderchars = [ " " " " " " " " " " " " " " " " ];
     extensions = {
       fzf-native.enable = true;
       live-grep-args.enable = true;

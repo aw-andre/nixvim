@@ -6,19 +6,22 @@
         {
           mode = "n";
           key = "[d";
-          action.__raw = "vim.diagnostic.goto_prev";
+          action.__raw =
+            "function() vim.diagnostic.jump({count = -1, float = { border = 'rounded' }}) end";
           options.desc = "Go to previous [D]iagnostic message";
         }
         {
           mode = "n";
           key = "]d";
-          action.__raw = "vim.diagnostic.goto_next";
+          action.__raw =
+            "function() vim.diagnostic.jump({count = 1, float = { border = 'rounded' }}) end";
           options.desc = "Go to next [D]iagnostic message";
         }
         {
           mode = "n";
           key = "<leader>e";
-          action.__raw = "vim.diagnostic.open_float";
+          action.__raw =
+            "function() vim.diagnostic.open_float({ border = 'rounded' }) end";
           options.desc = "Show diagnostic [E]rror messages";
         }
         {
@@ -85,7 +88,8 @@
         {
           mode = "n";
           key = "K";
-          action.__raw = "vim.lsp.buf.hover";
+          action.__raw =
+            "function() vim.lsp.buf.hover({ border = 'rounded' }) end";
           options.desc = "Hover Documentation";
         }
         {

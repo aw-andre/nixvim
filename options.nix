@@ -1,20 +1,29 @@
 {
   colorschemes.gruvbox.enable = true;
-  highlightOverride = {
-    folded.bg.__raw = "vim.api.nvim_get_hl(0, { name = 'normal' }).bg";
-    signcolumn.bg.__raw = "vim.api.nvim_get_hl(0, { name = 'linenr' }).bg";
-    comment.fg.__raw = "vim.api.nvim_get_hl(0, { name = 'string' }).fg";
-    error = {
-      fg.__raw = "vim.api.nvim_get_hl(0, { name = 'error' }).bg";
-      bg.__raw = "vim.api.nvim_get_hl(0, { name = 'normal' }).bg";
+  highlightOverride =
+    let normtmp = "vim.api.nvim_get_hl(0, { name = 'normal' }).bg";
+    in {
+      folded.link = "Normal";
+      signcolumn.bg.__raw = "vim.api.nvim_get_hl(0, { name = 'linenr' }).bg";
+      comment.fg.__raw = "vim.api.nvim_get_hl(0, { name = 'string' }).fg";
+      error = {
+        fg.__raw = "vim.api.nvim_get_hl(0, { name = 'error' }).bg";
+        bg.__raw = normtmp;
+        bold = true;
+      };
+      todo = {
+        fg.__raw = "vim.api.nvim_get_hl(0, { name = 'todo' }).bg";
+        bg.__raw = normtmp;
+        bold = true;
+      };
+      diagnosticsignerror.link = "diagnosticerror";
+      diagnosticsignwarn.link = "diagnosticwarn";
+      diagnosticsigninfo.link = "diagnosticinfo";
+      diagnosticsignhint.link = "diagnostichint";
+      normalfloat.link = "Normal";
+      pmenu.link = "Normal";
     };
-    todo = {
-      fg.__raw = "vim.api.nvim_get_hl(0, { name = 'todo' }).bg";
-      bg.__raw = "vim.api.nvim_get_hl(0, { name = 'normal' }).bg";
-    };
-    normalfloat.bg = "#242424";
-    pmenu.bg = "#292929";
-  };
+
   opts = {
     # Line numbers
     number = true;
