@@ -48,22 +48,16 @@
       action = "<CMD>nohlsearch<CR>";
       options.desc = "Turn off search highlighting";
     }
-    {
-      mode = "n";
-      key = "J";
-      action = "m`J``";
-      options.desc = "Join lower line";
-    }
-    {
-      mode = "v";
-      key = "J";
-      action = "<CMD>m '>+1<CR>gv=gv";
-      options.desc = "Join lower line";
-    }
+    # {
+    #   mode = "n";
+    #   key = "J";
+    #   action = "m`J``";
+    #   options.desc = "Join lower line";
+    # }
     {
       mode = [ "n" "v" ];
       key = "k";
-      action = "v:count == 0 ? 'gk' : 'km`'";
+      action = "v:count == 0 ? 'gk' : ('m`' . v:count . 'k')";
       options = {
         expr = true;
         silent = true;
@@ -72,7 +66,7 @@
     {
       mode = [ "n" "v" ];
       key = "j";
-      action = "v:count == 0 ? 'gj' : 'jm`'";
+      action = "v:count == 0 ? 'gj' : ('m`' . v:count . 'j')";
       options = {
         expr = true;
         silent = true;
