@@ -1,4 +1,18 @@
 {
+  colorschemes.gruvbox.enable = true;
+  highlightOverride = {
+    folded.bg.__raw = "vim.api.nvim_get_hl(0, { name = 'normal' }).bg";
+    signcolumn.bg.__raw = "vim.api.nvim_get_hl(0, { name = 'linenr' }).bg";
+    comment.fg.__raw = "vim.api.nvim_get_hl(0, { name = 'string' }).fg";
+    error = {
+      fg.__raw = "vim.api.nvim_get_hl(0, { name = 'error' }).bg";
+      bg.__raw = "vim.api.nvim_get_hl(0, { name = 'normal' }).bg";
+    };
+    todo = {
+      fg.__raw = "vim.api.nvim_get_hl(0, { name = 'todo' }).bg";
+      bg.__raw = "vim.api.nvim_get_hl(0, { name = 'normal' }).bg";
+    };
+  };
   opts = {
     # Line numbers
     number = true;
@@ -20,6 +34,7 @@
 
     list = true;
     listchars.__raw = "{ tab = '» ', trail = '·', nbsp = '␣' }";
+    fillchars.__raw = "{ eob = ' ' }";
 
     # Tab defaults (might get overwritten by an LSP server)
     tabstop = 2;
