@@ -12,6 +12,8 @@
       fg.__raw = "vim.api.nvim_get_hl(0, { name = 'todo' }).bg";
       bg.__raw = "vim.api.nvim_get_hl(0, { name = 'normal' }).bg";
     };
+    normalfloat.bg = "#242424";
+    pmenu.bg = "#292929";
   };
   opts = {
     # Line numbers
