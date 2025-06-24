@@ -31,18 +31,15 @@
       options.desc = "Exit terminal mode";
     }
     {
-      mode = [
-        "n"
-        "v"
-      ];
+      mode = [ "n" "v" ];
       key = "<leader>d";
-      action = "\"_d";
+      action = ''"_d'';
       options.desc = "Delete without yanking";
     }
     {
       mode = "v";
       key = "<leader>p";
-      action = "\"_dP";
+      action = ''"_dP'';
       options.desc = "Put without yanking";
     }
     {
@@ -57,12 +54,6 @@
       action = "m`J``";
       options.desc = "Join lower line";
     }
-    # {
-    #   mode = "v";
-    #   key = "y";
-    #   action = "m`y``";
-    #   options.desc = "Yank in visual mode";
-    # }
     {
       mode = "v";
       key = "J";
@@ -70,24 +61,18 @@
       options.desc = "Join lower line";
     }
     {
-      mode = [
-        "n"
-        "v"
-      ];
+      mode = [ "n" "v" ];
       key = "k";
-      action = "v:count == 0 ? 'gk' : 'k'";
+      action = "v:count == 0 ? 'gk' : 'km`'";
       options = {
         expr = true;
         silent = true;
       };
     }
     {
-      mode = [
-        "n"
-        "v"
-      ];
+      mode = [ "n" "v" ];
       key = "j";
-      action = "v:count == 0 ? 'gj' : 'j'";
+      action = "v:count == 0 ? 'gj' : 'jm`'";
       options = {
         expr = true;
         silent = true;
