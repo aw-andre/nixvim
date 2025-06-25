@@ -66,7 +66,7 @@
       mode = "n";
       key = "zm";
       action.__raw = "require('ufo').closeFoldsWith";
-      options.desc = "Fold less";
+      options.desc = "Fold more";
     }
     {
       mode = "n";
