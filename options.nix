@@ -1,10 +1,18 @@
 {
   colorschemes.gruvbox = {
     enable = true;
-    settings = {
-      transparent_mode = true;
-      inverse = true;
-    };
+    settings = { transparent_mode = true; };
+  };
+  highlightOverride = {
+    folded.link = "Normal";
+    error.link = "GruvboxRedBold";
+    todo.link = "GruvboxYellowBold";
+    diagnosticdeprecated.link = "DiagnosticUnderlineHint";
+    pmenu.link = "Normal";
+    pmenuthumb.link = "Normal";
+    pmenusbar.link = "Normal";
+    statusline.link = "Normal";
+    statuslinenc.link = "Normal";
   };
   # highlightOverride =
   #   let normtmp = "vim.api.nvim_get_hl(0, { name = 'normal' }).bg";
@@ -60,15 +68,18 @@
     expandtab = true;
     smarttab = true;
 
+    conceallevel = 0;
+
     # Save undo history
     undofile = true;
 
     # Highlight the current line for cursor
     # cursorline = true;
     ls = 0;
+    statusline = "%{repeat('─',winwidth('.'))}";
 
     # Show line and column when searching
-    ruler = true;
+    # ruler = true;
 
     # Start scrolling when the cursor is X lines away from the top/bottom
     scrolloff = 10;

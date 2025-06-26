@@ -15,6 +15,20 @@
       desc = "Set nohls on insert enter";
     }
     {
+      event = "FileType";
+      pattern = "help";
+      callback.__raw = ''
+        function()
+          vim.opt_local.relativenumber = true
+          vim.opt_local.number = true
+          vim.opt_local.conceallevel = 0
+          vim.opt_local.cursorline = false
+          vim.opt_local.signcolumn = "yes"
+        end
+      '';
+      desc = "Configure CopilotChat buffer";
+    }
+    {
       event = "CursorMoved";
       callback.__raw = ''
         function()
