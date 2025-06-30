@@ -80,6 +80,30 @@
     }
     {
       mode = [ "n" "v" ];
+      key = "z<Left>";
+      action = "zh";
+      options.remap = true;
+    }
+    {
+      mode = [ "n" "v" ];
+      key = "z<Down>";
+      action = "zj";
+      options.remap = true;
+    }
+    {
+      mode = [ "n" "v" ];
+      key = "z<Up>";
+      action = "zk";
+      options.remap = true;
+    }
+    {
+      mode = [ "n" "v" ];
+      key = "z<Right>";
+      action = "zl";
+      options.remap = true;
+    }
+    {
+      mode = [ "n" "v" ];
       key = "k";
       action = "v:count == 0 ? 'gk' : ('m`' . v:count . 'k')";
       options = {
