@@ -80,6 +80,30 @@
     }
     {
       mode = [ "n" "v" ];
+      key = "g<Left>";
+      action = "gh";
+      options.remap = true;
+    }
+    {
+      mode = [ "n" "v" ];
+      key = "g<Down>";
+      action = "gj";
+      options.remap = true;
+    }
+    {
+      mode = [ "n" "v" ];
+      key = "g<Up>";
+      action = "gk";
+      options.remap = true;
+    }
+    {
+      mode = [ "n" "v" ];
+      key = "g<Right>";
+      action = "gl";
+      options.remap = true;
+    }
+    {
+      mode = [ "n" "v" ];
       key = "z<Left>";
       action = "zh";
       options.remap = true;

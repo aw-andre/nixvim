@@ -11,7 +11,7 @@
   }];
   autoCmd = [{
     event = "BufEnter";
-    pattern = "copilot-chat";
+    pattern = "copilot-*";
     callback.__raw = ''
       function()
         vim.opt_local.relativenumber = true
@@ -19,6 +19,7 @@
         vim.opt_local.conceallevel = 0
         vim.opt_local.signcolumn = "yes"
         vim.opt_local.foldcolumn = "0"
+        vim.opt_local.cursorline = false
       end
     '';
     desc = "Configure CopilotChat buffer";
