@@ -56,6 +56,30 @@
     # }
     {
       mode = [ "n" "v" ];
+      key = "<Left>";
+      action = "h";
+      options.remap = true;
+    }
+    {
+      mode = [ "n" "v" ];
+      key = "<Down>";
+      action = "j";
+      options.remap = true;
+    }
+    {
+      mode = [ "n" "v" ];
+      key = "<Up>";
+      action = "k";
+      options.remap = true;
+    }
+    {
+      mode = [ "n" "v" ];
+      key = "<Right>";
+      action = "l";
+      options.remap = true;
+    }
+    {
+      mode = [ "n" "v" ];
       key = "k";
       action = "v:count == 0 ? 'gk' : ('m`' . v:count . 'k')";
       options = {
