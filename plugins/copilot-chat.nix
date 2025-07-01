@@ -11,7 +11,7 @@
   }];
   autoCmd = [{
     event = "BufEnter";
-    pattern = "copilot-*";
+    pattern = "copilot-chat";
     callback.__raw = ''
       function()
         vim.opt_local.relativenumber = true
