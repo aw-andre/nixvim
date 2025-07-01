@@ -25,6 +25,30 @@
       options.desc = "Move focus to the upper window";
     }
     {
+      mode = "n";
+      key = "<C-Left>";
+      action = "<C-w><C-h>";
+      options.desc = "Move focus to the left window";
+    }
+    {
+      mode = "n";
+      key = "<C-Right>";
+      action = "<C-w><C-l>";
+      options.desc = "Move focus to the right window";
+    }
+    {
+      mode = "n";
+      key = "<C-Down>";
+      action = "<C-w><C-j>";
+      options.desc = "Move focus to the lower window";
+    }
+    {
+      mode = "n";
+      key = "<C-Up>";
+      action = "<C-w><C-k>";
+      options.desc = "Move focus to the upper window";
+    }
+    {
       mode = "t";
       key = "<C-Esc>";
       action = "<C-\\><C-n>";
