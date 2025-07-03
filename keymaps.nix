@@ -80,75 +80,133 @@
     # }
     {
       mode = [ "n" "v" ];
+      key = "<C-S-6>";
+      action = "<C-6>";
+      options = {
+        expr = true;
+        silent = true;
+        remap = true;
+      };
+    }
+    {
+      mode = [ "n" "v" ];
       key = "<Left>";
       action = "h";
-      options.remap = true;
+      options = {
+        expr = true;
+        silent = true;
+        remap = true;
+      };
     }
     {
       mode = [ "n" "v" ];
       key = "<Down>";
       action = "j";
-      options.remap = true;
+      options = {
+        expr = true;
+        silent = true;
+        remap = true;
+      };
     }
     {
       mode = [ "n" "v" ];
       key = "<Up>";
       action = "k";
-      options.remap = true;
+      options = {
+        expr = true;
+        silent = true;
+        remap = true;
+      };
     }
     {
       mode = [ "n" "v" ];
       key = "<Right>";
       action = "l";
-      options.remap = true;
+      options = {
+        expr = true;
+        silent = true;
+        remap = true;
+      };
     }
     {
       mode = [ "n" "v" ];
       key = "g<Left>";
       action = "gh";
-      options.remap = true;
+      options = {
+        expr = true;
+        silent = true;
+        remap = true;
+      };
     }
     {
       mode = [ "n" "v" ];
       key = "g<Down>";
       action = "gj";
-      options.remap = true;
+      options = {
+        expr = true;
+        silent = true;
+        remap = true;
+      };
     }
     {
       mode = [ "n" "v" ];
       key = "g<Up>";
       action = "gk";
-      options.remap = true;
+      options = {
+        expr = true;
+        silent = true;
+        remap = true;
+      };
     }
     {
       mode = [ "n" "v" ];
       key = "g<Right>";
       action = "gl";
-      options.remap = true;
+      options = {
+        expr = true;
+        silent = true;
+        remap = true;
+      };
     }
     {
       mode = [ "n" "v" ];
       key = "z<Left>";
       action = "zh";
-      options.remap = true;
+      options = {
+        expr = true;
+        silent = true;
+        remap = true;
+      };
     }
     {
       mode = [ "n" "v" ];
       key = "z<Down>";
       action = "zj";
-      options.remap = true;
+      options = {
+        expr = true;
+        silent = true;
+        remap = true;
+      };
     }
     {
       mode = [ "n" "v" ];
       key = "z<Up>";
       action = "zk";
-      options.remap = true;
+      options = {
+        expr = true;
+        silent = true;
+        remap = true;
+      };
     }
     {
       mode = [ "n" "v" ];
       key = "z<Right>";
       action = "zl";
-      options.remap = true;
+      options = {
+        expr = true;
+        silent = true;
+        remap = true;
+      };
     }
     {
       mode = [ "n" "v" ];
