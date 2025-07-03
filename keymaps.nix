@@ -83,7 +83,6 @@
       key = "<C-S-6>";
       action = "<C-6>";
       options = {
-        expr = true;
         silent = true;
         remap = true;
       };
@@ -93,7 +92,6 @@
       key = "<Left>";
       action = "h";
       options = {
-        expr = true;
         silent = true;
         remap = true;
       };
@@ -103,7 +101,6 @@
       key = "<Down>";
       action = "j";
       options = {
-        expr = true;
         silent = true;
         remap = true;
       };
@@ -113,7 +110,6 @@
       key = "<Up>";
       action = "k";
       options = {
-        expr = true;
         silent = true;
         remap = true;
       };
@@ -123,7 +119,6 @@
       key = "<Right>";
       action = "l";
       options = {
-        expr = true;
         silent = true;
         remap = true;
       };
@@ -133,7 +128,6 @@
       key = "g<Left>";
       action = "gh";
       options = {
-        expr = true;
         silent = true;
         remap = true;
       };
@@ -143,7 +137,6 @@
       key = "g<Down>";
       action = "gj";
       options = {
-        expr = true;
         silent = true;
         remap = true;
       };
@@ -153,7 +146,6 @@
       key = "g<Up>";
       action = "gk";
       options = {
-        expr = true;
         silent = true;
         remap = true;
       };
@@ -163,7 +155,6 @@
       key = "g<Right>";
       action = "gl";
       options = {
-        expr = true;
         silent = true;
         remap = true;
       };
@@ -173,7 +164,6 @@
       key = "z<Left>";
       action = "zh";
       options = {
-        expr = true;
         silent = true;
         remap = true;
       };
@@ -183,7 +173,6 @@
       key = "z<Down>";
       action = "zj";
       options = {
-        expr = true;
         silent = true;
         remap = true;
       };
@@ -193,7 +182,6 @@
       key = "z<Up>";
       action = "zk";
       options = {
-        expr = true;
         silent = true;
         remap = true;
       };
@@ -203,7 +191,6 @@
       key = "z<Right>";
       action = "zl";
       options = {
-        expr = true;
         silent = true;
         remap = true;
       };
