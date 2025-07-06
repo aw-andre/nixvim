@@ -78,15 +78,15 @@
     #   action = "m`J``";
     #   options.desc = "Join lower line";
     # }
-    {
-      mode = [ "n" "v" ];
-      key = "<C-S-6>";
-      action = "<C-6>";
-      options = {
-        silent = true;
-        remap = true;
-      };
-    }
+    # {
+    #   mode = [ "n" "v" ];
+    #   key = "<C-^>";
+    #   action = "<C-6>";
+    #   options = {
+    #     silent = true;
+    #     remap = true;
+    #   };
+    # }
     {
       mode = [ "n" "v" ];
       key = "<Left>";
