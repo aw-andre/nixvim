@@ -13,6 +13,7 @@
     pmenusbar.link = "Normal";
     statusline.link = "Normal";
     statuslinenc.link = "Normal";
+    telescopeselection.link = "Normal";
   };
   # highlightOverride =
   #   let normtmp = "vim.api.nvim_get_hl(0, { name = 'normal' }).bg";
