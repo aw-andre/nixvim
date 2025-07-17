@@ -50,13 +50,19 @@
       desc = "Set nohls on cursor move";
     }
     {
-      event = "BufEnter";
+      event = "BufWinEnter";
       callback.__raw = ''
         function()
-          vim.cmd("file")
+          local bufnr = vim.api.nvim_get_current_buf()
+          local bufname = vim.api.nvim_buf_get_name(bufnr)
+
+          -- Only run for real files
+          if vim.fn.filereadable(bufname) == 1 then
+            vim.cmd("file")
+          end
         end
       '';
-      desc = "View file name on BufEnter";
+      desc = "View file name on BufEnter for visible normal buffers";
     }
   ];
 }
