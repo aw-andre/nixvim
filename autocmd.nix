@@ -49,5 +49,14 @@
       '';
       desc = "Set nohls on cursor move";
     }
+    {
+      event = "BufEnter";
+      callback.__raw = ''
+        function()
+          vim.cmd("file")
+        end
+      '';
+      desc = "View file name on BufEnter";
+    }
   ];
 }
