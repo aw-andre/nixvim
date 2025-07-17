@@ -72,8 +72,7 @@
     {
       mode = "n";
       key = "<leader>f/";
-      action.__raw =
-        "function() require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown { winblend = 10, previewer = false, }) end";
+      action.__raw = "require('telescope.builtin').current_buffer_fuzzy_find";
       options.desc = "[F]ind [/] in Current Buffer";
     }
     {
