@@ -18,6 +18,7 @@
           end
         '';
         completion = {
+          accept.auto_brackets.enabled = false;
           menu = {
             border = "rounded";
             scrollbar = false;
