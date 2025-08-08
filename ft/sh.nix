@@ -5,6 +5,5 @@
       diagnostics.zsh.enable = true;
       formatting.shfmt.enable = true;
     };
-    neotest.adapters.bash.enable = true;
   };
 }

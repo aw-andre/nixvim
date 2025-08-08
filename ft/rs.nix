@@ -1,7 +1,4 @@
 { pkgs, ... }: {
-  plugins = {
-    rustaceanvim.enable = true;
-    neotest.adapters.rust.enable = true;
-  };
+  plugins.rustaceanvim.enable = true;
   extraPackages = with pkgs; [ rustfmt ];
 }

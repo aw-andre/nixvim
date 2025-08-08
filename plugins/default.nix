@@ -19,6 +19,5 @@ in {
     which-key.enable = true;
     comment.enable = true;
     markdown-preview.enable = true;
-    neotest.enable = true;
   };
 }
