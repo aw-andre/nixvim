@@ -26,7 +26,20 @@
           vim.opt_local.signcolumn = "yes"
         end
       '';
-      desc = "Configure CopilotChat buffer";
+      desc = "Configure help buffers";
+    }
+    {
+      event = "TermOpen";
+      callback.__raw = ''
+        function()
+          vim.opt_local.relativenumber = true
+          vim.opt_local.number = true
+          vim.opt_local.conceallevel = 0
+          vim.opt_local.cursorline = false
+          vim.opt_local.signcolumn = "yes"
+        end
+      '';
+      desc = "Configure terminal buffers";
     }
     {
       event = "CursorMoved";
