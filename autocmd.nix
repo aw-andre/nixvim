@@ -16,7 +16,7 @@
     }
     {
       event = "FileType";
-      pattern = "help";
+      pattern = [ "help" "man" ];
       callback.__raw = ''
         function()
           vim.opt_local.relativenumber = true
