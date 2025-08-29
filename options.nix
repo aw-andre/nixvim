@@ -76,8 +76,8 @@
 
     # Highlight the current line for cursor
     # cursorline = true;
-    # ls = 0;
-    # statusline = "%{repeat('─',winwidth('.'))}";
+    ls = 0;
+    statusline = "%{repeat('─',winwidth('.'))}";
 
     # Show line and column when searching
     # ruler = true;
