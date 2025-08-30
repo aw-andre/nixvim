@@ -102,7 +102,7 @@
     }
     {
       event = [ "VimEnter" ];
-      callback.__raw = builtins.readFile ./find-files.lua;
+      callback.__raw = builtins.readFile ./grep-files.lua;
     }
   ];
 }
