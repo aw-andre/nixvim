@@ -11,4 +11,11 @@
       stop_eof = true;
     };
   };
+  extraConfigLuaPost = ''
+    if vim.g.neovide then
+      require('neoscroll').setup({
+        mappings = {}
+      })
+    end
+  '';
 }

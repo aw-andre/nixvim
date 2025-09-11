@@ -1,7 +1,8 @@
 {
   colorschemes.gruvbox = {
     enable = true;
-    settings = { transparent_mode = true; };
+    # settings.transparent_mode.__raw = "not vim.g.neovide";
+    settings.transparent_mode = true;
   };
   highlightOverride = {
     folded.link = "Normal";
@@ -93,5 +94,15 @@
     virtualedit = "block";
     timeoutlen = 300;
     shada = "'1000,<100000,s100,h";
+
+    # neovide
+    linespace = 20;
+    guifont = "Comic Code:h12";
+  };
+
+  globals = {
+    # neovide_opacity = 0.5;
+    neovide_normal_opacity = 0.5;
+    neovide_hide_mouse_when_typing = true;
   };
 }
