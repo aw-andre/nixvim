@@ -7,6 +7,18 @@
       ui-select.enable = true;
       undo.enable = true;
     };
+    settings.defaults = {
+      layout_strategy.__raw = ''
+        string.find(
+          vim.fn.system("hyprctl monitors -j | jq 'any(.transform == 3)'"),
+          "true"
+        )
+        and
+          "vertical"
+        or
+          "horizontal"
+      '';
+    };
   };
   keymaps = [
     {
