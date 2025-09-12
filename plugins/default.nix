@@ -19,5 +19,6 @@ in {
     which-key.enable = true;
     comment.enable = true;
     markdown-preview.enable = true;
+    lz-n.enable = true;
   };
 }

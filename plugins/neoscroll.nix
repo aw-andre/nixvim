@@ -1,7 +1,7 @@
 {
   plugins.neoscroll = {
     enable = true;
-    luaConfig.pre = "require('neoscroll').setup({ duration_multiplier = 0.2 })";
+    lazyLoad.settings.lazy = true;
     settings = {
       easing_function = "sine";
       hide_cursor = false;
@@ -11,10 +11,12 @@
       stop_eof = true;
     };
   };
+
   extraConfigLuaPost = ''
-    if vim.g.neovide then
+    if not vim.g.neovide then
+      require('lz.n').trigger_load('neoscroll.nvim')
       require('neoscroll').setup({
-        mappings = {}
+        duration_multiplier = 0.2,
       })
     end
   '';
