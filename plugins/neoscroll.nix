@@ -3,7 +3,7 @@
     enable = true;
     lazyLoad.settings.lazy = true;
     settings = {
-      easing_function = "sine";
+      easing_function = "quadratic";
       hide_cursor = false;
       mappings =
         [ "<C-u>" "<C-d>" "<C-b>" "<C-f>" "<C-y>" "<C-e>" "zt" "zz" "zb" ];
