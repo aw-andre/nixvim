@@ -8,14 +8,23 @@
       mimeType = [ "text/plain" ];
       categories = [ "Utility" "TextEditor" ];
     };
+    desktopEntries.neovide = {
+      name = "Neovide";
+      exec = "neovide %f";
+      terminal = true;
+      type = "Application";
+      mimeType = [ "text/plain" ];
+      categories = [ "Utility" "TextEditor" ];
+    };
     mimeApps.enable = true;
     mimeApps.defaultApplications = {
-      "text/plain" = "nvim.desktop";
-      "text/x-shellscript" = "nvim.desktop";
-      "text/markdown" = "nvim.desktop";
-      "application/x-shellscript" = "nvim.desktop";
+      "text/plain" = "neovide.desktop";
+      "text/x-shellscript" = "neovide.desktop";
+      "text/markdown" = "neovide.desktop";
+      "application/x-shellscript" = "neovide.desktop";
     };
   };
+
   programs.nixvim = {
     enable = true;
     defaultEditor = true;
@@ -44,11 +53,11 @@
       maplocalleader = " ";
       have_nerd_font = true;
     };
-    extraConfigLuaPost = ''
-      vim.ui.open = function(path)
-        vim.fn.jobstart({ "kitty", "-e", "nvim", path }, { detach = true })
-      end
-    '';
+    # extraConfigLuaPost = ''
+    #   vim.ui.open = function(path)
+    #     vim.fn.jobstart({ "kitty", "-e", "nvim", path }, { detach = true })
+    #   end
+    # '';
     imports = [ ./keymaps.nix ./options.nix ./autocmd.nix ./plugins ./ft ];
   };
 }

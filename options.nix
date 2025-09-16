@@ -96,13 +96,15 @@
     shada = "'1000,<100000,s100,h";
 
     # neovide
-    linespace = 20;
-    guifont = "Comic Code:h12";
+    linespace = 14;
+    guifont = "Comic Code:h14";
   };
 
   globals = {
     # neovide_opacity = 0.5;
     neovide_normal_opacity = 0.5;
     neovide_hide_mouse_when_typing = true;
+    neovide_padding_top = 2;
+    neovide_padding_bottom = 2;
   };
 }
